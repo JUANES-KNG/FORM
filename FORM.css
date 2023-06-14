@@ -1,0 +1,66 @@
+body {
+    background-image: url(BACK_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 20px;
+  }
+
+  .italic-button {
+    font-style: italic;
+  }  
+
+  h1 {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  select {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  form {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    margin-top: 20px;
+  }  
+
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group .btn {
+    margin-left: 10px;
+  }
+
+  #btnCalcularEdad{
+    margin-top: 1px;
+  }
+
+  /*.is-invalid {
+    border-color: #dc3545 !important;
+    background-color: #f8d7da !important;
+  }
+  
+  .is-valid {
+    border-color: #28a745 !important;
+    background-color: #d4edda !important;
+  }*/
+  
+  
+  

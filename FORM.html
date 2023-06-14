@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIO DE VIAJE</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="FORM.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">Formulario de Viaje</h1>
+    <form id="formulario">
+      <div class="form-group">
+        <label for="nombres">Nombres:</label>
+        <input type="text" class="form-control fst-italic" id="nombres">
+      </div>
+      <div class="form-group">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" class="form-control" id="apellidos">
+      </div>
+      <div class="form-group">
+        <label for="genero">Género:</label>
+        <select class="form-control" id="genero">
+          <option value="">Seleccione un género</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="correo">
+      </div>
+      <div class="form-group">
+        <label for="celular">Número de Celular:</label>
+        <input type="tel" class="form-control" id="celular">
+      </div>
+      <div class="form-group">
+        <label for="direccion">Dirección de Residencia:</label>
+        <input type="text" class="form-control" id="direccion">
+      </div>
+      <div class="form-group">
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <div class="input-group">
+          <input type="date" class="form-control" id="fecha">
+        </div>
+        <div id="edadUsuario"></div> <!-- Elemento para mostrar la edad -->
+      </div>
+      <!--<div class="form-group">
+        <label for="edad">Edad:</label>
+        <input type="text" class="form-control" id="edad" readonly>
+      </div>  
+      <div class="form-group">
+        <label>Seleccione el tipo de documento:</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipoDocumento" id="cedulaExtranjeria">
+          <label class="form-check-label" for="cedulaExtranjeria">Cédula de extranjería</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipoDocumento" id="cedulaCiudadania">
+          <label class="form-check-label" for="cedulaCiudadania">Cédula de ciudadanía</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipoDocumento" id="tarjetaIdentidad">
+          <label class="form-check-label" for="tarjetaIdentidad">Tarjeta de identidad</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="tipoDocumento" id="pasaporte">
+          <label class="form-check-label" for="pasaporte">Pasaporte</label>
+        </div>
+      </div>--> 
+
+      <div class="form-group">
+        <label for="tipoDocumento">Tipo de Documento:</label>
+        <select class="form-control" id="tipoDocumento">
+          <option value="">Seleccione un tipo de documento</option>
+          <option value="cedula">Cédula de Ciudadanía</option>
+          <option value="tarjeta">Tarjeta de Identidad</option>
+          <option value="pasaporte">Pasaporte</option>
+        </select>
+      </div>      
+
+      <div class="form-group">
+        <label for="numeroDocumento">Número de Documento:</label>
+        <input type="text" class="form-control" id="numeroDocumento">
+      </div>
+      <div class="form-group">
+        <label for="pesoEquipaje">Peso del Equipaje (en KG):</label>
+        <input type="number" class="form-control" id="pesoEquipaje">
+      </div>
+      <div class="form-group">
+        <label for="destino">Destino de Viaje:</label>
+        <select class="form-control" id="destino">
+          <option value="">Seleccione un destino</option>
+          <option value="bogota-cali">BOGOTÁ - CALI - $190,000</option>
+          <option value="bogota-medellin">BOGOTÁ - MEDELLÍN - $165,000</option>
+          <option value="bogota-manizales">BOGOTÁ - MANIZALES - $135,000</option>
+          <option value="bogota-barranquilla">BOGOTÁ - BARRANQUILLA - $245,000</option>
+          <option value="cali-bogota">CALI - BOGOTÁ - $190,000</option>
+          <option value="medellin-bogota">MEDELLÍN - BOGOTÁ - $165,000</option>
+          <option value="manizales-bogota">MANIZALES - BOGOTÁ - $135,000</option>
+          <option value="barranquilla-bogota">BARRANQUILLA - BOGOTÁ - $2,450,000</option>
+        </select>
+        <!--<div class="form-group">
+            <label for="precioTotal">Precio Total del Viaje:</label>
+            <input type="text" class="form-control" id="precioTotal" readonly>-->
+        </div>
+        <button type="submit" class="btn btn-dark italic-button">Generar Tiquete</button>
+        <!--<div id="tiquete"></div>--> <!-- Div para mostrar el tiquete -->
+    </form>
+  </div>
+  <script src="FORM.js"></script>
+</body>
+</html>
